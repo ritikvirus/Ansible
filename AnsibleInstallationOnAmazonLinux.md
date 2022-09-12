@@ -56,3 +56,32 @@ cd .ssh
 ```bash
 sudo vim id_rsa.pub
 ```
+![Example6]()
+**Copy SSH KEY From Master And Past Nodes**  
+![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copyMaster_key.PNG)
+# All Nodes System Use These Steps
+### Type These Commands in Nodes System
+```bash
+sudo yum update -y
+```
+```bash
+cd ~
+```
+```bash
+cd .ssh
+```
+```bash
+sudo vim authorized_keys
+```
+***Past Copied SSH KEY From Master Past in Node***  
+Go to last line then press enter then past your copied master system ssh Key
+![Example7](https://github.com/ritikvirus/Ansible/blob/main/Images/inNodeSystem_copy.PNG)
+
+### Then Type
+```bash
+sudo systemctl restart sshd
+```
+# Now Go to Master Machine Type This Command
+```bash
+ansible all -m ping
+```
