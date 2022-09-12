@@ -37,10 +37,10 @@ sudo vim /etc/ansible/ansible.cfg
 sudo vim /etc/ansible/hosts
 ```
 Make Group **[groupname]**  
+  Press Enter Give Node IPs  
+  
+![Example4](https://github.com/ritikvirus/Ansible/blob/main/Images/give_group_name_and_ips.PNG)  
 
-
-  Press Enter Give Node IPs
-![Example4](https://github.com/ritikvirus/Ansible/blob/main/Images/give_group_name_and_ips.PNG)
 ### Generate SSH KEY by Using This Command
 ```bash
 ssh-keygen
