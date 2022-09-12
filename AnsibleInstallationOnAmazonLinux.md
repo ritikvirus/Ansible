@@ -56,9 +56,9 @@ cd .ssh
 ```bash
 sudo vim id_rsa.pub
 ```
-![Example6]()
-**Copy SSH KEY From Master And Past Nodes**  
 ![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copyMaster_key.PNG)
+**Copy SSH KEY From Master And Past Nodes**  
+![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copy_in_node_auth_key.PNG)
 # All Nodes System Use These Steps
 ### Type These Commands in Nodes System
 ```bash
