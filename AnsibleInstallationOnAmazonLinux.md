@@ -58,7 +58,7 @@ sudo vim id_rsa.pub
 ```
 ![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copyMaster_key.PNG)
 **Copy SSH KEY From Master And Past Nodes**  
-![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copy_in_node_auth_key.PNG)
+
 # All Nodes System Use These Steps
 ### Type These Commands in Nodes System
 ```bash
@@ -76,6 +76,7 @@ sudo vim authorized_keys
 ***Past Copied SSH KEY From Master Past in Node***  
 Go to last line then press enter then past your copied master system ssh Key
 ![Example7](https://github.com/ritikvirus/Ansible/blob/main/Images/inNodeSystem_copy.PNG)
+![Example](![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copy_in_node_auth_key.PNG))
 
 ### Then Type
 ```bash
