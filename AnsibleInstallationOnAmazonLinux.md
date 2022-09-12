@@ -86,3 +86,4 @@ sudo systemctl restart sshd
 ```bash
 ansible all -m ping
 ```
+![example](https://github.com/ritikvirus/Ansible/blob/main/Images/ubuntu/final.PNG)
