@@ -32,13 +32,14 @@ sudo vim /etc/ansible/ansible.cfg
 ![Example2](https://github.com/ritikvirus/Ansible/blob/main/Images/ansible_confuncomment1.PNG)
 ![Example3](https://github.com/ritikvirus/Ansible/blob/main/Images/ansible_conf4.PNG)
 
-### Now Set Group And Node IPs
+  ### Now Set Group And Node IPs
 ```bash
 sudo vim /etc/ansible/hosts
 ```
 Make Group **[groupname]**  
-  
-Press Enter Give Node IPs
+
+
+  Press Enter Give Node IPs
 ![Example4](https://github.com/ritikvirus/Ansible/blob/main/Images/give_group_name_and_ips.PNG)
 ### Generate SSH KEY by Using This Command
 ```bash
