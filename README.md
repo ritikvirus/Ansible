@@ -55,7 +55,8 @@ host_key_checking = False
 sudo vim /etc/ansible/hosts
 ```
 Make Group **[groupname]**  
-Press Enter Give Node IPs
+Press Enter Give Node IPs  
+
 ![Example4](https://github.com/ritikvirus/Ansible/blob/main/Images/give_group_name_and_ips.PNG)
 ### Generate SSH KEY by Using This Command
 ```bash
