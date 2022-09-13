@@ -23,6 +23,7 @@ If using RHEL
 ```bash
 sudo yum install ansible
 ````
+And Vim Replace vi only
 #### Check Ansible version And Configuration Path
 ![Example](https://github.com/ritikvirus/Ansible/blob/main/Images/ansible_conf_path.PNG)
 ## Now Open Ansible Configuration File
