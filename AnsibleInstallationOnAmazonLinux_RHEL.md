@@ -5,6 +5,7 @@ Ansible is an open source tool that you can use to automate your AWS deployments
 
 ## Prerequisites
 1.An AWS EC2 Instance (AmazonLinux/Centos/Recommend Amazon Linux)
+2. make sure your all instance in same users login (Master) and (Node) Like ec2-user to ec2-user
 
 ## Installation
 
