@@ -19,6 +19,10 @@ sudo yum upgrade -y
 ```bash
 sudo amazon-linux-extras install ansible2 -y
 ```
+If using RHEL
+```bash
+sudo yum install ansible
+````
 #### Check Ansible version And Configuration Path
 ![Example](https://github.com/ritikvirus/Ansible/blob/main/Images/ansible_conf_path.PNG)
 ## Now Open Ansible Configuration File
