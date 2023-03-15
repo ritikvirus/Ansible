@@ -32,7 +32,7 @@ sudo apt install ansible
 sudo vim /etc/ansible/ansible.cfg
 ```
 > **Note**
-> When we install Ubuntu, it does not have cfg files. That's why we are adding this create command :point_left:
+> When we install Ansible On Ubuntu, it does not have cfg files. That's why we are adding this cnf :point_left:
 1. Write [defaults]
 2. Write inventory = /etc/ansible/hosts
 3. Write sudo_user = root
