@@ -72,7 +72,7 @@ sudo vim id_rsa.pub
 ![Example6]()
 **Copy SSH KEY From Master And Past Nodes**  
 ![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copyMaster_key.PNG)
-# All Nodes System Use These Steps
+# In All Client Nodes System Use These Steps
 ### Type These Commands in Client Nodes System
 ```bash
 sudo apt update -y
