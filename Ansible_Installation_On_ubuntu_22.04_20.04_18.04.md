@@ -46,12 +46,12 @@ host_key_checking = False
 
 ![Example2](https://github.com/ritikvirus/Ansible/blob/main/Images/ubuntu/ansible_configuration.PNG)
 
-### Now Set Group And Node IPs
+### Now Set Group And Client Node IPs
 ```bash
 sudo vim /etc/ansible/hosts
 ```
 Make Group **[groupname]**  
-Press Enter Give Node IPs  
+Press Enter Give Client Node IPs  
 
 ![Example4](https://github.com/ritikvirus/Ansible/blob/main/Images/give_group_name_and_ips.PNG)
 ### Generate SSH KEY by Using This Command
@@ -70,10 +70,10 @@ cd .ssh
 sudo vim id_rsa.pub
 ```
 ![Example6]()
-**Copy SSH KEY From Master And Past Nodes**  
+**Copy SSH KEY From Master Node And Past Client Nodes**  
 ![Example6](https://github.com/ritikvirus/Ansible/blob/main/Images/copyMaster_key.PNG)
-# In All Client Nodes System Use These Steps
-### Type These Commands in Client Nodes System
+# In All Client Nodes Use These Commands
+### Type These Commands in Client Nodes 
 ```bash
 sudo apt update -y
 ```
@@ -86,7 +86,7 @@ cd .ssh
 ```bash
 sudo vim authorized_keys
 ```
-***Past Copied SSH KEY From Master Past in Node***  
+***Past Copied SSH KEY From Master Node Past in Client Node***  
 Go to last line then press enter then past your copied master system ssh Key
 ![Example7](https://github.com/ritikvirus/Ansible/blob/main/Images/inNodeSystem_copy.PNG)
 
@@ -94,7 +94,7 @@ Go to last line then press enter then past your copied master system ssh Key
 ```bash
 sudo systemctl restart sshd
 ```
-# Now Go to Master(Master Node) Machine And Type This Command
+# Now Go to Master Machine (Master Node) And Type This Command
 ```bash
 ansible all -m ping
 ```
