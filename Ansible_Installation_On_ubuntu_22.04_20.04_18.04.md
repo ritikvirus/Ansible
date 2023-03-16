@@ -99,3 +99,49 @@ sudo systemctl restart sshd
 ansible all -m ping
 ```
 ![Example](https://github.com/ritikvirus/Ansible/blob/main/Images/ubuntu/final.PNG)
+
+# Simple Ansible Playbook: Install Nginx Server on Client Node with Congratulatory Message
+```bash
+sudo nano playbook-name.yml
+```
+## Please Paste This Code In Your playbook-name.yml File
+```bash
+---
+- name: Install and configure Nginx
+  become: true
+  hosts: all
+
+  tasks:
+    - name: Check if Nginx is installed
+      stat:
+        path: /usr/sbin/nginx
+      register: nginx_installed
+
+    - name: Install Nginx if not present
+      apt:
+        name: nginx
+        state: present
+      when: not nginx_installed.stat.exists
+      register: nginx_install
+
+    - name: Overwrite Nginx default index file
+      copy:
+        content: "Congrats! Your Ansible playbook is working fine."
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+      notify:
+        - restart nginx
+
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
+```
+# Run This Playbook In Your Master Node
+```bash
+ansible-playbook playbook-name.yml
+```
